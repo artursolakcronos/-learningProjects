@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactComponent } from './contact/contact.component';
+import { CreateContactComponent } from './create-contact/create-contact.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,7 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        ContactListComponent,
+        ContactComponent,
+        CreateContactComponent
       ],
     }).compileComponents();
   });
